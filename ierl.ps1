@@ -1,3 +1,4 @@
+$PATH_TO_IERL = "D:\source\ierl"
 $file_name = $args[0]
 $remainingArgs = @()
 if ($args.Count -gt 1) {
@@ -6,4 +7,4 @@ if ($args.Count -gt 1) {
 
 Write-Output @remainingArgs
 
-&escript D:\source\ierl @remainingArgs
+&escript $PATH_TO_IERL @remainingArgs
