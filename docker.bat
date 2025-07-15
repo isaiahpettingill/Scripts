@@ -1,2 +1,2 @@
 @echo OFF
-podman %*
+wsl docker %*

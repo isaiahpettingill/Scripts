@@ -9,4 +9,4 @@ if ($args.Count -gt 1) {
     $remainingArgs = $args[1..($args.Count - 1)]
 } 
 
-& clang.exe -std=c++17 --target=x86_64-pc-windows-gnu -lc++ -lc++abi -Wall @remainingArgs -o "$file_name.exe" "$file_name.cpp"
+& clang.exe -std=c++17 -Wall @remainingArgs -o "$file_name.exe" "$file_name.cpp"
