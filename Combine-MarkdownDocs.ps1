@@ -32,8 +32,8 @@ try {
         throw "path '$Path' does not exist or is not a directory."
     }
 
-    $markdownFiles = Get-ChildItem -Path $Path -Filter *.md -Recurse -File |
-                     Sort-Object FullName
+    $markdownFiles = Get-ChildItem -Path $Path -Filter *.md* -Recurse -File | Sort-Object FullName
+                        
 
     if (-not $markdownFiles) {
         throw "no markdown files found under '$Path'."
